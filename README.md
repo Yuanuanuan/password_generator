@@ -1,5 +1,5 @@
 # 密碼產生器
-![封面截圖](/image/index.png)
+![封面截圖](/public/image/index.png)
 ## 介紹
 可以依個人需求產生出隨機密碼。
 ## 功能
