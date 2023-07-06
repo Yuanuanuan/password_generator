@@ -53,7 +53,14 @@
 
   {{#if password}}
     <div class="password">
-      Your Password: <code>{{password}}</code>
+      <div>
+        Your Password: <code id="code">{{password}}</code>
+      </div>
+      <button class="button" type="button" onclick="copy()">Copy
+        <span class="material-symbols-outlined">
+          content_copy
+        </span>
+      </button>
     </div>
   {{/if}}
 
@@ -85,4 +92,20 @@
       small.classList.remove('small_red');
     }
   });
+</script>
+<script>
+  function copy() {
+      const copyText = document.getElementById("code");
+      const aux = document.createElement("input");
+      // 设置文本输入框的值为要复制的链接
+      aux.setAttribute("value", copyText.textContent);
+      // 将文本输入框添加到文档中
+      document.body.appendChild(aux);
+      // 选中文本输入框中的内容
+      aux.select();
+      // 执行复制命令
+      document.execCommand("copy");
+      // 移除辅助的文本输入框
+      document.body.removeChild(aux);
+    }
 </script>
