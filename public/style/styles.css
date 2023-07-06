@@ -43,6 +43,7 @@ body{
   color: #444;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  font-family: 'Bodoni Moda', serif;
 }
 
 .title {
@@ -73,6 +74,32 @@ body{
   color: #999999
 }
 
+.small_red {
+  color: #E6005C;
+}
+
+.small_green {
+  color: #4DE680;
+}
+
+.password {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  height: 60px;
+  padding: 20px;
+  align-items: center;
+  background-color: #B0E0E6;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+code {
+  margin-left: 20px;
+  font-size: 20px;
+  color: #F08080;
+}
+
 .submit {
   height: 60px;
   width: 300px;
@@ -83,6 +110,7 @@ body{
   border: 2px solid #ffffff;
   overflow: hidden;
   position: relative;
+  font-family: 'Bodoni Moda', serif;
 }
 
 .submit::after {
